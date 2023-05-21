@@ -15,16 +15,24 @@ botao.addEventListener("click", ()=>{
         const labelPassword = document.querySelector("label[for='idPassword']")
 
         const erro = document.querySelector(".mensagemErro")
-
-        const form = document.querySelector("form[action='home_page.html']")
-
-        if(inputUser.value.length < 4){
-            alert("Usuário deve possuir 4 ou mais caracteres!")
-            form.onsubmit = "return false"
-            labelUser.setAttribute("style","color:#ff0000")
-        }
+        const form = document.getElementById('meuForm');
         
-})
+                if(inputUser.value.length < 4){
+                    alert("Usuário deve possuir 4 ou mais caracteres!")
+                    labelUser.setAttribute("style","color:#ff0000")
+                    form.addEventListener('submit', function(event) {
+                      event.preventDefault();
+                    });
+                }
+                else{
+                    const form = document.getElementById('meuForm');
+                    form.addEventListener('submit', function() {
+                      return true;
+                      });
+                }
+
+
+            })
 
 
 
