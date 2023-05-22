@@ -7,28 +7,21 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="./js/script.js" defer></script>
-</head>
-<body>
-    <div>
-        <h1>Login do usuário</h1>
-    </div>
-    <div class="formulario">
-        <form action="home_page.html" method="get" id="meuForm">
-        <div class="user">
-            <label for="idUser">E-mail</label>
-            <input type="user" name="nmUser" id="idUser" placeholder="Digite seu usuário">
-        </div>
-        <div class="password">
-            <label for="idPassword">Password</label>
-            <input type="password" name="nmPassword" id="idPassword" placeholder="Digite sua senha">
-        </div>
-        <div class="mensagemErro">
-        </div>
-        <div class="buttons">
-            <button id="btnEnter" type="submit">Entrar</button>
-            <button id="btnReset" type="reset">Resetar</button>
-        </div>
-        </form>
-    </div>
-</body>
-</html>
+    <!DOCTYPE html>
+
+    <head>
+      <title>Validação de Usuário e Senha</title>
+    </head>
+    <body>
+      <form id="meuForm">
+        <label for="idUser">Usuário:</label>
+        <input type="text" id="idUser" required><br>
+    
+        <label for="idPassword">Senha:</label>
+        <input type="password" id="idPassword" required><br>
+    
+        <button id="btnEnter">Entrar</button>
+      </form>
+    
+    </body>
+    
