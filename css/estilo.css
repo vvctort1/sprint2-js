@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, #bc5e00, #964b00, #783c00  );
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 30px;
+}
